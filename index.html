@@ -200,6 +200,21 @@ html, body {
 }
 .cue::before { content: '💡'; flex-shrink: 0; font-size: 11px; }
 
+/* ── VÍDEOS DE COMO EXECUTAR ── */
+.vid-lbl { font-size: 8px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; font-weight: 600; margin: 0 0 6px; }
+.vid-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.vid-btn {
+  display: inline-flex; align-items: center; gap: 5px; max-width: 100%;
+  background: var(--white); border: 1.5px solid var(--border); color: var(--terra);
+  font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: .2px;
+  padding: 6px 11px; border-radius: 20px; cursor: pointer; text-decoration: none;
+  line-height: 1.25;
+}
+.vid-btn::before { content: '▶'; font-size: 8px; color: var(--blush); flex-shrink: 0; }
+.vid-btn:active { background: var(--peach); border-color: var(--blush); }
+.vid-btn .vt { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hbtn.vt-ico { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0; font-size: 12px; flex-shrink: 0; }
+
 /* ── LAST SESSION BANNER ── */
 .last-session {
   background: var(--white); border: 1px solid var(--border);
@@ -499,6 +514,81 @@ const DAYS=[
   }
 ];
 
+// ── VÍDEOS DE COMO EXECUTAR ──
+// Todos os links foram validados (oEmbed do YouTube) em set/2026.
+// Se um link morrer, é só trocar a URL aqui que o app inteiro atualiza.
+const VIDS={
+  'Leg Press Horizontal (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=OUXR0S2MiRo', t:'Leg press horizontal — como fazer?'},
+    {u:'https://www.youtube.com/watch?v=xC5lzosZrR4', t:'Leg press: forma correta'},
+    {u:'https://www.youtube.com/watch?v=bfHuhQPa4lc', t:'Ativando ao máximo a perna e o glúteo'}
+  ],
+  'Peito na Máquina (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=WGdi4iTfza8', t:'Supino máquina — como fazer'},
+    {u:'https://www.youtube.com/watch?v=xpzhSW7QXjQ', t:'Os 5 piores erros de iniciantes'}
+  ],
+  'Puxada Frontal Aberta (Polia)':[
+    {u:'https://www.youtube.com/watch?v=3-ywQ4QXzT8', t:'Puxada frontal (pegada aberta)'},
+    {u:'https://www.youtube.com/watch?v=25XTUWnt_R4', t:'Puxada frente na polia — execução correta'}
+  ],
+  'Elevação Lateral (Halteres)':[
+    {u:'https://www.youtube.com/watch?v=3ytWWwhn6uU', t:'Elevação lateral e frontal com halteres'},
+    {u:'https://www.youtube.com/watch?v=bE1lI-M76KM', t:'Elevação lateral — execução correta'},
+    {u:'https://www.youtube.com/watch?v=jannLx4RxKo', t:'Técnica correta e erros comuns'}
+  ],
+  'Bíceps com Halteres (Halteres)':[
+    {u:'https://www.youtube.com/watch?v=Jqo9MBeVpok', t:'Rosca direta com halteres'},
+    {u:'https://www.youtube.com/watch?v=865ar4KPodA', t:'Rosca alternada com halteres'}
+  ],
+  'Gémeos / Panturrilha (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=Nap62yku2ks', t:'Panturrilha na máquina (sentado)'},
+    {u:'https://www.youtube.com/watch?v=eL1uHZVLceg', t:'Panturrilha sentada — como fazer'}
+  ],
+  'Abdominais (Colchão)':[
+    {u:'https://www.youtube.com/watch?v=hZVIstfFsIc', t:'Abdominal supra solo — execução correta'},
+    {u:'https://www.youtube.com/watch?v=i28_a3RFUyw', t:'Abdominal crunch solo'}
+  ],
+  'Cadeira Extensora (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=y6juG3XuRe4', t:'Cadeira extensora — melhor forma'},
+    {u:'https://www.youtube.com/watch?v=Svq2T3L9oKo', t:'Cadeira extensora — executar corretamente'}
+  ],
+  'Cadeira Flexora (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=dMYsB4Eb2BY', t:'Mesa flexora — a forma correta'},
+    {u:'https://www.youtube.com/watch?v=touF8ArO71Y', t:'Mesa flexora — execução e erros'}
+  ],
+  'Voador / Peitoral (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=a5XwjsD3AOI', t:'Peck deck — execução'},
+    {u:'https://www.youtube.com/watch?v=jLl6YEWBD0I', t:'Voador peitoral — como treinar'}
+  ],
+  'Remada na Máquina (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=i3FScctBKvc', t:'Remada articulada neutra — execução'},
+    {u:'https://www.youtube.com/watch?v=urznLSJ6lvM', t:'Remada na máquina pegada neutra'}
+  ],
+  'Tríceps Corda ou Polia (Polia)':[
+    {u:'https://www.youtube.com/watch?v=Em5sYz2x-KQ', t:'Tríceps na polia — melhor forma'},
+    {u:'https://www.youtube.com/watch?v=gbyR2d_OwB0', t:'Tríceps corda — execução correta'}
+  ],
+  'Abdutora e Adutora (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=50qHGus1TZk', t:'Cadeira abdutora — postura correta'},
+    {u:'https://www.youtube.com/watch?v=GNxSJQsJOsA', t:'Cadeira abdutora — execução'},
+    {u:'https://www.youtube.com/watch?v=goQVyEGMYMM', t:'Cadeira adutora — postura correta'},
+    {u:'https://www.youtube.com/watch?v=4NWVjJuEx7A', t:'Cadeira adutora — como fazer'}
+  ],
+  'Supino Guiado (Smith ou Máquina)':[
+    {u:'https://www.youtube.com/watch?v=WGdi4iTfza8', t:'Supino máquina — como fazer'},
+    {u:'https://www.youtube.com/watch?v=G2fexbMF0B4', t:'Supino reto vertical na máquina'}
+  ],
+  'Voador Inverso (Máquina)':[
+    {u:'https://www.youtube.com/watch?v=5-HhI9yCuUo', t:'Peck deck invertido — execução'},
+    {u:'https://www.youtube.com/watch?v=AZYFLY0s780', t:'Peck deck invertido — como fazer'}
+  ]
+};
+
+function esc(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
 let W=1, DI=0;
 
 // ── STORAGE ──
@@ -592,6 +682,7 @@ function renderMain(){
     const prs2=lsPR();
     const suggested=prk?sw(prs2[prk],ph.pct):null;
     const exD=saved.ex[ei]||{sets:[]};
+    const vids=VIDS[ex.n]||[];
 
     // ── Última sessão (semana anterior) ──
     let lastHtml='';
@@ -657,13 +748,16 @@ function renderMain(){
           <div class="ex-name">${ex.n}</div>
           <div class="ex-meta">${ex.s}× · ${ex.r}${ex.o?' · '+ex.o:''}${prk&&suggested?` · Sugestão: ${suggested}kg`:''}</div>
         </div>
-        <div style="display:flex;align-items:center;gap:8px">
+        <div style="display:flex;align-items:center;gap:6px">
+          ${vids[0]?`<a class="hbtn vt-ico" href="${vids[0].u}" target="_blank" rel="noopener" title="Ver vídeo: ${esc(vids[0].t)}" aria-label="Ver vídeo de como fazer" onclick="event.stopPropagation()">▶</a>`:''}
           <button class="hbtn" id="th${ei}" onclick="event.stopPropagation();timerOpen(${ei})">⏱ Descanso</button>
           <span class="chev" id="chev${ei}">▼</span>
         </div>
       </div>
       <div class="ex-body" id="exb${ei}">
         ${ex.o?`<div class="cue">${ex.o}</div>`:''}
+        ${vids.length?`<div class="vid-lbl">Como executar · ${vids.length} opç${vids.length>1?'ões':'ão'}</div>
+        <div class="vid-row">${vids.map(v=>`<a class="vid-btn" href="${v.u}" target="_blank" rel="noopener" title="${esc(v.t)}"><span class="vt">${esc(v.t)}</span></a>`).join('')}</div>`:''}
         ${lastHtml}${timerHtml}${sHtml}
         <textarea class="note-ta" placeholder="Anotações…" data-ei="${ei}" onchange="upNote(this)">${noteVal}</textarea>
       </div>

@@ -34,7 +34,7 @@ Os dados (cargas, séries, PRs) ficam salvos **no próprio aparelho dele** via `
 Sempre que alterar o `index.html`, **mude a `VERSION` no `sw.js`**:
 
 ```js
-const VERSION = 'v1';   // → 'v2', 'v3'...
+const VERSION = 'v2';   // → 'v3', 'v4'...
 ```
 
 Sem isso o celular do aluno pode continuar vendo a versão antiga (o service worker guarda uma cópia para uso offline).
@@ -66,3 +66,29 @@ Ver [`treino.md`](./treino.md) para a rotina completa.
 | **A** | Leg Press e Peitoral |
 | **B** | Extensora, Flexora e Remadas |
 | **C** | Máquinas Inversas e variações |
+
+## 🎬 Vídeos de execução
+
+O Mikael é iniciante, então **todo exercício tem vídeo**: um botão `▶` no canto do card (abre direto, sem precisar abrir o card) e, dentro do card, de 2 a 4 opções com o título de cada vídeo.
+
+São **34 vídeos** no total (15 exercícios + mobilidade e alongamento), todos em português e **verificados um a um**.
+
+### Como trocar ou adicionar um vídeo
+
+Edite o objeto `VIDS` no `index.html`. A chave é o nome **exato** do exercício:
+
+```js
+'Leg Press Horizontal (Máquina)':[
+  {u:'https://www.youtube.com/watch?v=OUXR0S2MiRo', t:'Leg press horizontal — como fazer?'},
+  {u:'https://www.youtube.com/watch?v=xC5lzosZrR4', t:'Leg press: forma correta'}
+]
+```
+
+### Como conferir se um link está vivo
+
+```powershell
+$u = [uri]::EscapeDataString("https://www.youtube.com/watch?v=SEU_ID")
+Invoke-RestMethod "https://www.youtube.com/oembed?url=$u&format=json"
+```
+
+Se voltar com o **título** = o vídeo existe. Se der **404** = o link morreu, basta trocar a URL.

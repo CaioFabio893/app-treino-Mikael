@@ -96,18 +96,89 @@
 
 ---
 
+## 🎬 Vídeos de execução
+
+Todos os exercícios abaixo têm vídeo no app. No card do exercício tem um botão **▶** (abre o primeiro) e, abrindo o card, aparecem **todas as opções com o título**. Links verificados e em português.
+
+### Leg Press Horizontal (Máquina) — Treinos A e C
+- [Leg press horizontal — como fazer?](https://www.youtube.com/watch?v=OUXR0S2MiRo)
+- [Leg press: forma correta](https://www.youtube.com/watch?v=xC5lzosZrR4)
+- [Ativando ao máximo a perna e o glúteo](https://www.youtube.com/watch?v=bfHuhQPa4lc)
+
+### Peito na Máquina — Treino A
+- [Supino máquina — como fazer (Fisioprev)](https://www.youtube.com/watch?v=WGdi4iTfza8)
+- [Os 5 piores erros de iniciantes](https://www.youtube.com/watch?v=xpzhSW7QXjQ)
+
+### Puxada Frontal Aberta (Polia) — Treino A
+- [Puxada frontal (pegada aberta)](https://www.youtube.com/watch?v=3-ywQ4QXzT8)
+- [Puxada frente na polia — execução correta](https://www.youtube.com/watch?v=25XTUWnt_R4)
+
+### Elevação Lateral (Halteres) — Treinos A e C
+- [Elevação lateral e frontal com halteres](https://www.youtube.com/watch?v=3ytWWwhn6uU)
+- [Elevação lateral — execução correta](https://www.youtube.com/watch?v=bE1lI-M76KM)
+- [Técnica correta e erros comuns](https://www.youtube.com/watch?v=jannLx4RxKo)
+
+### Bíceps com Halteres — Treinos A e C
+- [Rosca direta com halteres](https://www.youtube.com/watch?v=Jqo9MBeVpok)
+- [Rosca alternada com halteres](https://www.youtube.com/watch?v=865ar4KPodA)
+
+### Gémeos / Panturrilha (Máquina) — Treinos A e C
+- [Panturrilha na máquina (sentado)](https://www.youtube.com/watch?v=Nap62yku2ks)
+- [Panturrilha sentada — como fazer](https://www.youtube.com/watch?v=eL1uHZVLceg)
+
+### Abdominais (Colchão) — Treinos A, B e C
+- [Abdominal supra solo — execução correta](https://www.youtube.com/watch?v=hZVIstfFsIc)
+- [Abdominal crunch solo](https://www.youtube.com/watch?v=i28_a3RFUyw)
+
+### Cadeira Extensora — Treino B
+- [Cadeira extensora — melhor forma](https://www.youtube.com/watch?v=y6juG3XuRe4)
+- [Cadeira extensora — executar corretamente](https://www.youtube.com/watch?v=Svq2T3L9oKo)
+
+### Mesa Flexora / Cadeira Flexora — Treino B
+- [Mesa flexora — a forma correta](https://www.youtube.com/watch?v=dMYsB4Eb2BY)
+- [Mesa flexora — execução e erros](https://www.youtube.com/watch?v=touF8ArO71Y)
+
+### Voador / Peitoral (Peck Deck) — Treino B
+- [Peck deck — execução](https://www.youtube.com/watch?v=a5XwjsD3AOI)
+- [Voador peitoral — como treinar](https://www.youtube.com/watch?v=jLl6YEWBD0I)
+
+### Remada na Máquina — Treino B
+- [Remada articulada neutra — execução](https://www.youtube.com/watch?v=i3FScctBKvc)
+- [Remada na máquina pegada neutra](https://www.youtube.com/watch?v=urznLSJ6lvM)
+
+### Tríceps Corda ou Polia — Treinos B e C
+- [Tríceps na polia — melhor forma](https://www.youtube.com/watch?v=Em5sYz2x-KQ)
+- [Tríceps corda — execução correta](https://www.youtube.com/watch?v=gbyR2d_OwB0)
+
+### Abdutora e Adutora — Treino B
+- [Cadeira abdutora — postura correta](https://www.youtube.com/watch?v=50qHGus1TZk)
+- [Cadeira abdutora — execução](https://www.youtube.com/watch?v=GNxSJQsJOsA)
+- [Cadeira adutora — postura correta](https://www.youtube.com/watch?v=goQVyEGMYMM)
+- [Cadeira adutora — como fazer](https://www.youtube.com/watch?v=4NWVjJuEx7A)
+
+### Supino Guiado (Smith ou Máquina) — Treino C
+- [Supino máquina — como fazer (Fisioprev)](https://www.youtube.com/watch?v=WGdi4iTfza8)
+- [Supino reto vertical na máquina](https://www.youtube.com/watch?v=G2fexbMF0B4)
+
+### Voador Inverso (Máquina) — Treino C
+- [Peck deck invertido — execução](https://www.youtube.com/watch?v=5-HhI9yCuUo)
+- [Peck deck invertido — como fazer](https://www.youtube.com/watch?v=AZYFLY0s780)
+
+---
+
 ## Como o App funciona
 
 | Item | O que faz |
 |---|---|
 | **Abas (Treino A / B / C)** | Alterna entre os três Full Body. Mostra ● verde quando a semana já foi salva. |
-| **PRs** | Cadastre os PRs das 4 máquinas-chave. O app calcula a **carga sugerida** de cada semana automaticamente. |
-| **SEM 1–8** | Troca de semana. Cada semana tem seu percentual de carga. |
-| **Fase atual** | Mostra o percentual da semana. Deload na semana 8. |
-| **⏱ Descanso** | Cronômetro por exercício (1', 2' ou 3') com vibração no fim. |
-| **Séries** | Anote carga (kg) e reps de cada série. O botão ✓ / ✗ / · marca a série. |
-| **🔥 Aquecimento** | Marque com ✓ cada item do pré-treino. Botão ▶ YouTube abre o vídeo. |
+| **▶ no card** | Abre o vídeo de como fazer o exercício, sem precisar abrir o card. |
+| **Como executar** | Dentro do card, todas as opções de vídeo com o título de cada uma. |
+| **🔥 Aquecimento** | Marque com ✓ cada item do pré-treino. Botão ▶ YouTube nos que têm vídeo. |
 | **🧘 Alongamento** | Marque com ✓ cada alongamento pós-treino. |
+| **PRs** | Cadastre os PRs das 4 máquinas-chave. O app calcula a **carga sugerida** de cada semana. |
+| **SEM 1–8** | Troca de semana. Cada semana tem seu percentual de carga. |
+| **⏱ Descanso** | Cronômetro por exercício (1', 2' ou 3') com vibração no fim. |
+| **💡 Dica** | Dica curta de execução aparece ao abrir o card. |
 | **💾 Salvar** | Grava tudo no aparelho (localStorage). Também salva automático ao sair. |
 | **Última sessão** | Mostra as cargas da última vez que você fez aquele exercício. |
 

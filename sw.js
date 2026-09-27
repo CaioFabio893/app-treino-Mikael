@@ -1,6 +1,6 @@
 // ── MUDE A VERSÃO (v2, v3...) SEMPRE que alterar o app ──
 // Sem isso o celular do aluno continua mostrando a versao antiga.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `treino-mikael-${VERSION}`;
 
 const ASSETS = [
